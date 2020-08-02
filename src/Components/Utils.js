@@ -5,6 +5,11 @@ export const View = styled.View`
   ${props => props.color && css`background-color: ${props.color};`}
   ${props => props.width && css`width: ${props.width};`}
   ${props => props.height && css`height: ${props.height};`}
+  ${props => props.padding && css`padding: ${props => props.padding}px;`}
+  ${props => props.paddingTop && css`padding-top: ${props => props.paddingTop}px;`}
+  ${props => props.paddingBottom && css`padding-bottom: ${props => props.paddingBottom}px;`}
+  ${props => props.paddingLeft && css`padding-left: ${props => props.paddingLeft}px;`}
+  ${props => props.paddingRight && css`padding-right: ${props => props.paddingRight}px;`}
   ${props => props.alignItems && css`align-items: ${props => props.alignItems};`}
   ${props => props.justifyContent && css`justify-content: ${props => props.justifyContent};`}
 `

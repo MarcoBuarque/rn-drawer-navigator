@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FlatList } from 'react-native'
 
+import { SectionButton } from './elements'
 import * as Utils from './../Utils'
 
 export const Sidebar = (props) => {
@@ -13,7 +14,7 @@ export const Sidebar = (props) => {
 
   return (
     <Utils.View>
-      {sectionTitle.map(key => <Utils.Text>{key}</Utils.Text>)}
+      {sectionTitle.map(key => <SectionButton title={key} />)}
     </Utils.View>
 )}
 
