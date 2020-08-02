@@ -13,9 +13,10 @@ export const Drawer = createDrawerNavigator(
 
   },
   {
-    initialRouteName: "About",
+    initialRouteName: 'Home',
     unmountInactiveRoutes: true,
-    headerMode: "none",
+    backBehavior: 'order',
+    drawerType: 'permanent',
     contentComponent: props => <Sidebar {...props} />
   }
 ) 

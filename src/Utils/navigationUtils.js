@@ -10,6 +10,7 @@ const AppNavigator = createStackNavigator(
   },
   {
     initialRouteName: "Drawer",
+    headerMode: 'none',
   }
 )
 

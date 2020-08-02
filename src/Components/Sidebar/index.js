@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { FlatList } from 'react-native'
 
 import { SectionButton } from './elements'
 import * as Utils from './../Utils'
@@ -12,9 +11,13 @@ export const Sidebar = (props) => {
     setSectionTitle(Object.keys(descriptors))
   }, [props])
 
+  const onPress = ({ routeName }) => { // TODO: Use callBack
+    props.navigation.navigate(routeName) // O navigation é da própria stack
+  }
+
   return (
     <Utils.View>
-      {sectionTitle.map(key => <SectionButton title={key} />)}
+      {sectionTitle.map((routeName, index) => <SectionButton key={`${index}-${routeName}`} title={routeName} onPress={onPress} />)}
     </Utils.View>
 )}
 

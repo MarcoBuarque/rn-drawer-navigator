@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native'
 import * as Utils from './../Utils'
 
 export const SectionButton = ({ title, onPress }) => (
-  <TouchableOpacity onPress={onPress}>
+  <TouchableOpacity onPress={() => onPress({ routeName: title })}>
     <Utils.View paddingLeft={10} paddingTop={10}>
       <Utils.Text>{title}</Utils.Text>
     </Utils.View>
