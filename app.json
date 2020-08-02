@@ -1,0 +1,12 @@
+{
+  "name": "rn-drawer-navigator",
+  "displayName": "rn-drawer-navigator",
+  "expo": {
+    "name": "rn-drawer-navigator",
+    "slug": "rn-drawer-navigator",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
