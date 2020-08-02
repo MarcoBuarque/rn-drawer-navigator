@@ -3,11 +3,11 @@ import React from 'react'
 import * as Utils from './../Utils'
 
 export const Sidebar = () => (
-  <Utils.Container>
+  <Utils.View>
     <Utils.Text>Test SIDE BARRR</Utils.Text>
     <Utils.Text>Test SIDE BARRR</Utils.Text>
     <Utils.Text>Test SIDE BARRR</Utils.Text>
-  </Utils.Container>
+  </Utils.View>
 )
 
 export default Sidebar

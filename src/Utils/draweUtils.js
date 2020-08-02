@@ -15,7 +15,7 @@ export const Drawer = createDrawerNavigator(
   {
     initialRouteName: "Home",
     unmountInactiveRoutes: true,
-    // headerMode: "none",
+    headerMode: "none",
     contentComponent: props => <Sidebar />
   }
 ) 
