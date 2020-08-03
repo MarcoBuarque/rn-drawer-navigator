@@ -1,4 +1,5 @@
 import React from 'react'
+import { ScrollView } from 'react-native'
 
 import { compadreWashington } from '../../Utils/constants'
 
@@ -6,11 +7,13 @@ import * as Utils from '../../Components/Utils'
 import Header from '../../Components/Header'
 
 export const CompadreWashington = () => (
-  <Utils.Container>
+  <Utils.Container flex={1}>
     <Header title='CompadreWashington' />
-    <Utils.View>
-      <Utils.Text>{compadreWashington}</Utils.Text>
-    </Utils.View>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <Utils.View>
+        <Utils.Text>{compadreWashington}</Utils.Text>
+      </Utils.View>
+    </ScrollView>
   </Utils.Container>
 )
 

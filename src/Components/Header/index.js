@@ -22,7 +22,7 @@ Header.defaultProps = {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 10,
+    paddingBottom: 10,
     borderBottomWidth: 1
   }
 })
