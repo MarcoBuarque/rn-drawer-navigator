@@ -3,17 +3,19 @@ import { createDrawerNavigator } from 'react-navigation-drawer'
 
 import Sidebar from './../Components/Sidebar'
 
-import Home from './../Pages/Home'
-import About from './../Pages/About'
+import Mussum from './../Pages/Mussum'
+import CompadreWashington from './../Pages/CompadreWashington'
+import SilvioSantos from '../Pages/SilvioSantos'
 
 export const Drawer = createDrawerNavigator(
   {
-    Home:{ screen: Home },
-    About:{ screen: About }
-
+    Mussum:{ screen: Mussum },
+    CompadreWashington:{ screen: CompadreWashington },
+    SilvioSantos:{ screen: SilvioSantos },
+    Hollywood: { screen: SilvioSantos }
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Mussum',
     unmountInactiveRoutes: true,
     backBehavior: 'order',
     drawerType: 'permanent',
