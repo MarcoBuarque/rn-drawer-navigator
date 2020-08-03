@@ -12,8 +12,6 @@ export class Mussum extends Component {
   // state = {}
 
   render () {
-    // const { params: { imageName } } = this.props.navigation.state
-    console.log('navigation222', this.props.navigation.state.params)
     return (
       <Utils.Container>
         <Header title='Mussum' />
