@@ -1,3 +1,5 @@
 ## [WIP]
 
-Um simples exemplo de uma aplicação react native usando o drawer navigator como menu e meio de navegação
+Um simples e divertido exemplo de uma aplicação react native que utiliza o drawer navigator como menu e meio de navegação.
+
+![](DrawerNavigator.gif)
